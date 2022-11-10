@@ -1,5 +1,6 @@
 import pytest
 
+
 @pytest.fixture(scope="session")
 def dummy_dataset(tmpdir_factory):
     """Create a dummy dataset for testing"""
