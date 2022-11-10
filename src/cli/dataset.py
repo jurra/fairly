@@ -1,44 +1,3 @@
-'''
-# Create a local dataset under path with default template
-fairly dataset create <path>
-
-# Create a local dataset under path with the specified template
-# <template> = 'zeondo, 4tu, default'
-fairly dataset create <path> --template <template>
-
-# Show information about the specified local dataset
-# show some metadata + handy info about the dataset
-fairly dataset show <path>
-
-fairly dataset upload <path> <repository>
-# Ex. fairly dataset upload ~/my-dataset zenodo
-    
-# Upload dataset by using a custom token (can be useful for e.g. data stewards)
-fairly dataset upload <path> <repository> --token <token>
-fairly upload <path> <repository> --token <token>
-# If the dataset was not uploaded before: create remote entry (get id), set metadata, upload all files, upload local manifest to add id
-# If the dataset was uploaded (id exists in manifest): update remote metadata, upload added and modified files, delete removed files
-
-metadata:
-  4tu_id: <id>
-
-files:
-
-# Download a dataset by using its URL address or DOI
-# fairly automatically recognize them and creates corresponding client
-fairly dataset download <url|doi>
-fairly download <url|doi>
-# Ex. fairly download https://zenodo.org/record/6026285
-
-fairly dataset download <url|doi> --token <token> 
-fairly dataset download <repository> <id>
-fairly dataset download --repository zenodo --id 6026285
-
-# TODO: Assess if this is a good idea or not????
-# Update 'title' metadata of the local dataset
-fairly dataset update <path> --title <title> 
-
-'''
 import os
 import sys
 import shutil
@@ -58,7 +17,15 @@ app = typer.Typer(pretty_exceptions_show_locals=False)
 def create(
     metadata: str = typer.Argument("", help="Metadata specification to be used for the dataset, for example figshare or zenodo."),
 ) -> None:
-    '''Create a local dataset under path with default template'''
+    '''Create a local dataset under path with default template
+    
+    fairly dataset create <path>
+
+    Create a local dataset under path with the specified template
+    <template> = 'zeondo, 4tu, default'
+    
+    fairly dataset create <path> --template <template>
+    '''
     # Check that the manifest is not placed in the dataset directory
     if os.path.isfile("manifest.yaml"):
         print("manifest.yaml already exists in the current directory, cannot overwrite existing dataset metadata")
@@ -68,16 +35,39 @@ def create(
         shutil.copy(template_path, os.path.join(os.getcwd(), "manifest.yaml"))
 
 @app.command()
+def show():
+    '''Show information about the specified local dataset
+    show some metadata + handy info about the dataset
+    fairly dataset show <path>
+    '''
+    raise NotImplementedError
+
+
+@app.command()
 def download(
     url: str = typer.Option("", help="URL option argument"),
     doi: str = typer.Option("", help="DOI option argument"),
     path: str = typer.Argument("./", help="Path where the dataset will be downloaded"),
 ) -> None:
-    '''Download a dataset by using its URL address, DOI or ID'''
+    '''Download a dataset by using its URL address, DOI or ID'
+    Download a dataset by using its URL address or DOI
+    fairly automatically recognize them and creates corresponding client
+    
+    fairly dataset download <url|doi>
+    fairly download <url|doi>
+    
+    Example: 
+    >>> fairly download https://zenodo.org/record/6026285
+
+    fairly dataset download <url|doi> --token <token> 
+    fairly dataset download <repository> <id>
+    fairly dataset download --repository zenodo --id 6026285
+    '''
     # Test the connection to the repository by listing account datasets
 
     # Fetch the dataset metadata
     # stire the dataset metadata in the manifest
+    raise NotImplementedError
 
 @app.command()
 def list(
@@ -113,7 +103,25 @@ def list(
     except:
         pass
 
+@app.command()
+def upload():
+    '''
+    Upload dataset by using a custom token (can be useful for e.g. data stewards)
+    >>> fairly dataset upload <path> <repository> --token <token>
+    >>> fairly upload <path> <repository> --token <token>
+    
+    If the dataset was not uploaded before: create remote entry (get id), set metadata, upload all files, upload local manifest to add id
+    If the dataset was uploaded (id exists in manifest): update remote metadata, upload added and modified files, delete removed files
+    '''
+    # Raise error not implemented
+    raise NotImplementedError
 
+@app.command()
+def delete():
+    '''
+    fairly delete (url|doi)
+    '''
+    raise NotImplementedError
 
 if __name__ == "__main__":
     app()

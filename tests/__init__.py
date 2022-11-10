@@ -43,7 +43,7 @@ except:
     print("Dataset already exists, skipping creation")
 
 
-def create_manifest_from_template(template_file: str) -> None:
+def create_manifest_from_template(template_file: str, path) -> None:
     """Create a manifest file from a template file
     Parameters
     ----------
@@ -69,9 +69,10 @@ def create_manifest_from_template(template_file: str) -> None:
             # template dates
             template['metadata']['publication_date'] = '2020-01-01'
 
-    with open(f"./tests/fixtures/dummy_dataset/manifest.yaml", "w") as f:
+    with open(f"{path}/manifest.yaml", "w") as f:
         f.write(yaml.dump(template))
 
 # Set testing flag
 fairly.TESTING = True
+
 

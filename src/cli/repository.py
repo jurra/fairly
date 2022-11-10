@@ -1,16 +1,6 @@
 import typer
 import fairly
 import pprint
-'''
-fairly create [path]
-
-# this should write or save to fairly.json
-fairly repository list
-fairly repository add --id <id> --name <name> --api-url <url> --token <token>
-fairly repository update <id> --token <token>
-fairly repository remove <id>
-
-'''
 
 pp = pprint.PrettyPrinter(indent=4)
 
@@ -24,10 +14,18 @@ def list():
         print(key)
 
 @app.command()
+def list_my_datasets():
+    '''List all datasets in the current repository'''
+    raise NotImplementedError
+
+@app.command()
 def add(
     id: str = typer.Option("", help="Repository ID"),
 ):
     ''' Add a repository to the config file,
+    
+    fairly repository add --id <id> --name <name> --api-url <url> --token <token>
+
     Notice that this should only be allowed once there is a corresponing module
     for the repository.
     '''
@@ -56,6 +54,10 @@ def update(
         # TODO: This method or something similar doesnt exist yet
         fairly.update_repository(id, token)
 
+@app.command()
+def remove():
+    '''fairly repository remove <id>'''
+    raise NotImplementedError
 
 if __name__ == "__main__":
     app()
