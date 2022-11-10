@@ -123,6 +123,17 @@ class Client(ABC):
         return config
 
 
+    def save_config(self, save_environment=False) -> Dict:
+        """Saves client configuration."""
+        id = self.repository_id if self.repository_id else self.client_id
+
+        for key, val in self.get_config_parameters().items():
+            # TODO: Implement configuration saving functionality
+            pass
+
+        raise NotImplementedError
+
+
     @classmethod
     def parse_id(cls, id: str) -> Tuple(str, str):
         """Parses the specified identifier
@@ -264,12 +275,13 @@ class Client(ABC):
 
         """
 
-        # Patch HTTPConnection block size to improve connection speed
-        # ref: https://stackoverflow.com/questions/72977722/python-requests-post-very-slow
-        http.client.HTTPConnection.__init__.__defaults__ = tuple(
-            x if x != 8192 else self.CHUNK_SIZE
-            for x in http.client.HTTPConnection.__init__.__defaults__
-        )
+        if not getattr(fairly, "TESTING", False):
+            # Patch HTTPConnection block size to improve connection speed
+            # ref: https://stackoverflow.com/questions/72977722/python-requests-post-very-slow
+            http.client.HTTPConnection.__init__.__defaults__ = tuple(
+                x if x != 8192 else self.CHUNK_SIZE
+                for x in http.client.HTTPConnection.__init__.__defaults__
+            )
 
         # Set default data format
         if not format:

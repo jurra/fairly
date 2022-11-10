@@ -21,13 +21,6 @@ TEMPLATES = os.listdir("./src/fairly/data/templates")
 # We generate a unique string that we can use to populate metadata for testing
 ustring = str(uuid.uuid4())
 
-# Create a file in ~./fairly/config.json
-with open(os.path.expanduser("~/.fairly/config.json"), "w") as f:
-    # Create dict with config
-    config = { "4tu": { "token": FIGSHARE_TOKEN }, 
-               "zenodo": { "token": ZENODO_TOKEN } 
-             }
-    f.write(json.dumps(config))
 
 # copy existing ~/.fairly/config.json to ~/.fairly/config.json.bak
 # We do this to test the config file creation and loading
@@ -50,8 +43,6 @@ except:
     print("Dataset already exists, skipping creation")
 
 
-# for template_file in TEMPLATES:
-# TODO: Maybe create a class for each metadata (this needs to change later with schemas)
 def create_manifest_from_template(template_file: str) -> None:
     """Create a manifest file from a template file
     Parameters
@@ -81,60 +72,6 @@ def create_manifest_from_template(template_file: str) -> None:
     with open(f"./tests/fixtures/dummy_dataset/manifest.yaml", "w") as f:
         f.write(yaml.dump(template))
 
-# Monkey patch the requests client library where we undo the patching of the HTTPConnection block size 
-# that prevents us from using pytest-vcr to recort the requests
-def _request(self, endpoint: str, method: str="GET", headers: dict=None, data=None, format: str=None, serialize: bool=True):
-    """ Sends a HTTP request and returns the result
-
-    Returns:
-        Returned content and response
-
-    """
-
-    # Patch HTTPConnection block size to improve connection speed
-    # ref: https://stackoverflow.com/questions/72977722/python-requests-post-very-slow
-    # http.client.HTTPConnection.__init__.__defaults__ = tuple(
-    #     x if x != 8192 else self.CHUNK_SIZE
-    #     for x in http.client.HTTPConnection.__init__.__defaults__
-    # )
-
-    # Set default data format
-    if not format:
-        format = self.REQUEST_FORMAT
-
-    # Serialize data if required
-    if data is not None and serialize:
-        if format == "json":
-            data = json.dumps(data)
-
-    # Create session if required
-    if self._session is None:
-        self._session = self._create_session()
-
-    # Build URL address
-    if not self.config["api_url"]:
-        raise ValueError("No API URL address")
-
-    # TODO: Better join of endpoint
-    url = self.config["api_url"] + endpoint
-
-    _headers = headers.copy() if headers else {}
-    if format == "json":
-        _headers["Accept"] = "application/json"
-        if "Content-Type" not in _headers:
-            _headers["Content-Type"] = "application/json"
-
-    response = self._session.request(method, url, headers=_headers, data=data)
-    response.raise_for_status()
-
-    if response.content:
-        if format == "json":
-            content = response.json()
-        else:
-            content = response.content
-    else:
-        content = None
-
-    return content, response
-fairly.Client._request = _request
+# Set testing flag
+fairly.TESTING = True
 
