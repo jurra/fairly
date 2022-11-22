@@ -49,7 +49,9 @@ zenodo_client = fairly.client(id="zenodo", token=ZENODO_TOKEN)
 
 # Test the procedure of creating a local dataset and uploading it to
 # the different remote repositories
-@pytest.mark.vcr(cassette_library_dir='tests/fixtures/vcr_cassettes', filter_headers=['authorization'])
+@pytest.mark.vcr(cassette_library_dir='tests/fixtures/vcr_cassettes', 
+                 filter_headers=['authorization'],
+                 allow_playback_repeats=False)
 @pytest.mark.parametrize("client", [(figshare_client),
                         (zenodo_client)])
 def test_create_and_upload_dataset(client: fairly.Client, dummy_dataset):
@@ -85,7 +87,9 @@ def test_create_and_upload_dataset(client: fairly.Client, dummy_dataset):
 
 
 # Test the download of the different datasets created
-@pytest.mark.vcr(cassette_library_dir='tests/fixtures/vcr_cassettes', filter_headers=['authorization'])
+@pytest.mark.vcr(cassette_library_dir='tests/fixtures/vcr_cassettes', 
+                 filter_headers=['authorization'],
+                 allow_playback_repeats=False)
 @pytest.mark.parametrize("client", [(figshare_client),
                         (zenodo_client)])
 def test_download_dataset(client: fairly.Client, dummy_dataset):
@@ -115,7 +119,9 @@ def test_download_dataset(client: fairly.Client, dummy_dataset):
     for dir in dirs:
         shutil.rmtree(f"{dummy_dataset.strpath}/{dir}/")
 
-@pytest.mark.vcr(cassette_library_dir='tests/fixtures/vcr_cassettes', filter_headers=['authorization'])
+@pytest.mark.vcr(cassette_library_dir='tests/fixtures/vcr_cassettes', 
+                 filter_headers=['authorization'],
+                 allow_playback_repeats=False)
 @pytest.mark.parametrize("client", [(figshare_client),
                         (zenodo_client)])
 def test_get_account_datasets(client: fairly.Client):
