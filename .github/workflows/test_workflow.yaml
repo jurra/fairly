@@ -26,5 +26,5 @@ jobs:
         run: |
           # flags added to work with vcr cassettes
           # pytest --record-mode=once -cov=fairly tests/
-          pytest --record-mode=none tests/test_fairly.py
+          pytest tests/test_fairly.py
           
