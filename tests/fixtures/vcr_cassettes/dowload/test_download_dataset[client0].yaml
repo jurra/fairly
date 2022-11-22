@@ -1,0 +1,5164 @@
+interactions:
+- request:
+    body: '{"title": "My fairly test"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '27'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: POST
+    uri: https://api.figshare.com/v2/account/articles
+  response:
+    body:
+      string: '{"entity_id": 21602406, "location": "https://api.figshare.com/v2/account/articles/21602406",
+        "warnings": []}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '108'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:51 GMT
+      Location:
+      - https://api.figshare.com/v2/account/articles/21602406
+      Server:
+      - nginx
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"title": "My fairly test", "description": "My test description", "authors":
+      [{"name": "John Doe"}]}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '100'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: PUT
+    uri: https://api.figshare.com/v2/account/articles/21602406
+  response:
+    body:
+      string: '{"location": "https://api.figshare.com/v2/account/articles/21602406",
+        "warnings": []}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '85'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:52 GMT
+      Location:
+      - https://api.figshare.com/v2/account/articles/21602406
+      Server:
+      - nginx
+    status:
+      code: 205
+      message: Reset Content
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: DELETE
+    uri: https://api.figshare.com/v2/account/articles/21602406/embargo
+  response:
+    body:
+      string: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 22 Nov 2022 10:50:52 GMT
+      Server:
+      - nginx
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: '{"name": "file_0.txt", "size": 6, "md5": "6eb512cb2557734c63f6fa15ef61ef9f"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '76'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: POST
+    uri: https://api.figshare.com/v2/account/articles/21602406/files
+  response:
+    body:
+      string: '{"location": "https://api.figshare.com/v2/account/articles/21602406/files/38288616"}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '84'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:53 GMT
+      Location:
+      - https://api.figshare.com/v2/account/articles/21602406/files/38288616
+      Server:
+      - nginx
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288616
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA41QS27DIBC9SuR1iYMJxMllEJ+hQSEYwZA0rXr3GkdWW6mLLufN+818dDWFSVmJ
+        0wVid9p0ZqfZkYmBDIZqsueWE73jljDhjKPARjWY7mWz6moOTXVGTOXU964mApXcoSChW+dfy1ll
+        2Jrp2j8F/X/9CyqsZWmUQSHYBqYMNw932ZbQdisQJ5TqpnxQOkBjNhSyxEdaeA3yRSpEZc7QzpWp
+        6uCNvEEufmqnOxUKNJ6dBzYO4yiomOeorouH8wHkbotvuPTz7w0VT+Pg40VOMTx++NjpHv/6UVwX
+        kH9/qAWUfk1eQmpKwc99r5Y3CwGa08HogfPDge2NYE44RTk4QcEdXdPMTqnit6b7/AJKGXcB5QEA
+        AA==
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:53 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://fup-eu-west-1.figshare.com/upload/c0b39362-2c1b-45d5-b05d-36fcf1e38a2c
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA22MTQvCMBBE/8ueW20Sd605K+KleheRfOxCsbZiI4jifzcK3rzNvHnME9Jw4h4s
+        hMqbhSFd6qB8OcOIpa8wloYkiGJTOx2ggHPELBN7VDp4jTifm1kgIyROIQsploVkcWwfDJYK6N05
+        BzC1rmtSNJW242M1Sff0sZJLtzHPu1Wz3DTrjC7umjLZP7+pGcCqr3dNW5GRE9iqAO7jr+Hfl24I
+        J45gxXUjvw6vN1ZAkSjpAAAA
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, DELETE, PUT
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 22 Nov 2022 10:50:53 GMT
+      ETag:
+      - W/"e9-Q5X5P8+eytvDad+ij6SerX5fXm4"
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Express
+      X-Robots-Tag:
+      - noindex
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: file_0
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '6'
+      User-Agent:
+      - python-requests/2.28.1
+    method: PUT
+    uri: https://fup-eu-west-1.figshare.com/upload/c0b39362-2c1b-45d5-b05d-36fcf1e38a2c/1
+  response:
+    body:
+      string: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, DELETE, PUT
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Tue, 22 Nov 2022 10:50:53 GMT
+      ETag:
+      - W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Express
+      X-Robots-Tag:
+      - noindex
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python-requests/2.28.1
+    method: POST
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288616
+  response:
+    body:
+      string: "<html>\n <head>\n  <title>202 Accepted</title>\n </head>\n <body>\n
+        \ <h1>202 Accepted</h1>\n  The request is accepted for processing.<br/><br/>\n\n\n\n
+        </body>\n</html>"
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '157'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Tue, 22 Nov 2022 10:50:53 GMT
+      Location:
+      - https://api.figshare.com/v2/account/articles/21602406/files/38288616
+      Server:
+      - nginx
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288616
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA5WP227DIBBEfyXyc30lECc/gzAsMQoGxCWXVv33et1aymsfZ3bn7OxXVYL1QvHs
+        b+Cqy6GS3UTOhA31IPupPlJF66mjqiZMS90DGcUgq4/DnivRYgqdlEUuCZWRPBUpISX0Q4S7gQfH
+        OeB4N4zjIfpr/NtDDyLPrwA70iQuchZyBmzIQ5nsyr5DTMZjWy1sAtxTqyDjMI6sZ6t2YtkY2ljg
+        XZOfeStoPtFlv2Br3I17Z19vHOUf7v2tOeeQLm3r9gHERptrmkWERvqlxQOp3S9vR0oI1qx9F0UR
+        wWCi/SCngdLTiRwlI5pp0VPQrAd91phZSaHkf2S+fwAz72J4uAEAAA==
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:53 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/articles/21602406
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWyk0tLk5MT1WyUlByzSvJLKlUyMsvUUjLL81LsVJwLCrJTM5JDUstKs7Mz1PS
+        UVBKzk9BUuuXX+IGUqlUCwCxKsiFSQAAAA==
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:53 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:54 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"name": "file_1.txt", "size": 6, "md5": "ba9d332813a722b273a95fa13dd88d94"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '76'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: POST
+    uri: https://api.figshare.com/v2/account/articles/21602406/files
+  response:
+    body:
+      string: '{"location": "https://api.figshare.com/v2/account/articles/21602406/files/38288619"}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '84'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:54 GMT
+      Location:
+      - https://api.figshare.com/v2/account/articles/21602406/files/38288619
+      Server:
+      - nginx
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288619
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA42Q3W6DMAyFX6XieiklQBv6MpFJzBo1DRFx6Lpp7z5MhbZJu9ilj8/5/PNR5OhH
+        sJrGK4bivCuUrQ6yMa0wpu5EY2UjetP0AmQPpsFDKxsoXnZbLk+eUxeimM5lOeQoMIs7JhLVfnCv
+        6QIT7s14K5+B8r/8REA5MdtMCISWxTjh7PCuuYnc24QwkoYZnIfeIztZxUnTI64+llzSQATmgnyu
+        jrn3zugZp+RGPn0An5B9dilqJZU6Vt1SB7itjMF51NWe3mjdz72zenyCvQtXPQb/+MGx4z389aOw
+        NXD6/SEekMpt8jokx+jdsu/NtozoobN1LVVVw0nKXp5q6NoBqtpapWzXcGYhxUzfmeLzC89t5Yrl
+        AQAA
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:54 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://fup-eu-west-1.figshare.com/upload/8d1024c5-cc39-4d24-bc4b-a2bac4e0524a
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA22MwQrCMBBE/2XPrTabRJOcFfFSvYvIJpuAWFuxEUTx342CN28zbx7zhDycYg8O
+        DIsGVdB1CNLWilHVPihfE3oKKjYaFUEFZ9ZF9mRZSjRC0hzR41yS1YmEZDaGrSrieHxEcLMKejqX
+        ANKgMTNhp+nYxYOY5Hv+WJnybSzzdtku1u2qoAtdcyG75ze1Azjx9a55k9IYM7imgtjzr+m/L90Q
+        TpHBJerG+Nq/3iLWRFnpAAAA
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, DELETE, PUT
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 22 Nov 2022 10:50:54 GMT
+      ETag:
+      - W/"e9-rodENMLn0SeQG9REbeDTUPRUZ8E"
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Express
+      X-Robots-Tag:
+      - noindex
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: file_1
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '6'
+      User-Agent:
+      - python-requests/2.28.1
+    method: PUT
+    uri: https://fup-eu-west-1.figshare.com/upload/8d1024c5-cc39-4d24-bc4b-a2bac4e0524a/1
+  response:
+    body:
+      string: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, DELETE, PUT
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Tue, 22 Nov 2022 10:50:54 GMT
+      ETag:
+      - W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Express
+      X-Robots-Tag:
+      - noindex
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python-requests/2.28.1
+    method: POST
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288619
+  response:
+    body:
+      string: "<html>\n <head>\n  <title>202 Accepted</title>\n </head>\n <body>\n
+        \ <h1>202 Accepted</h1>\n  The request is accepted for processing.<br/><br/>\n\n\n\n
+        </body>\n</html>"
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '157'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Tue, 22 Nov 2022 10:50:54 GMT
+      Location:
+      - https://api.figshare.com/v2/account/articles/21602406/files/38288619
+      Server:
+      - nginx
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288619
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA5WPS27DMAxErxJ4XcexJCdyLiPQEp0IUSRBn3xa9O410xrItssZch6HX02NLoBR
+        JVzQN8dNI02/Y0IPrdZ8bIVhop20mFpgE2iBu4EJaD42a64mRylycoFSMymrVa5aY87kx4Q3i3dF
+        c6TxalivYgqn9LdHHiZVnhFXpM0KSgF9RmqoYp3cwr5hyjZQ2xlcRtozi+CSSbnvx0V7uL4Ys3Wo
+        +m15lFdB+0nu/hfsrL+o4N3zjWPC3b+/dS4l5mPX+XWAaTvbUz5Dwq0O144O5G69/DpSY3R26Xs1
+        AyEmGA3nTPYcDoxN7MBhHGbouTFSmlFQZiHFWv6R+f4BfIs+8rgBAAA=
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:54 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/articles/21602406
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWyk0tLk5MT1WyUlByzSvJLKlUyMsvUUjLL81LsVJwLCrJTM5JDUstKs7Mz1PS
+        UVBKzk9BUuuXX+IGUqlUCwCxKsiFSQAAAA==
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:55 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:56 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"name": "file_2.txt", "size": 6, "md5": "92ed3b5f07b44bc4f70d0b24d5e1867c"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '76'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: POST
+    uri: https://api.figshare.com/v2/account/articles/21602406/files
+  response:
+    body:
+      string: '{"location": "https://api.figshare.com/v2/account/articles/21602406/files/38288622"}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '84'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:56 GMT
+      Location:
+      - https://api.figshare.com/v2/account/articles/21602406/files/38288622
+      Server:
+      - nginx
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288622
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA42QSW7DMAxFrxJ4XcXzkFxGoCS6EaJIgganadG713RgtAW66JKf/z8OH0X2xoHi
+        yV3RFudDgdVQj63sGKh+YJ3qgQHUJ1ZNI4gWoWqFKl4Oey4HQ6lLSj6ey3LOnmFmd4yJ1cdZv8YL
+        BDxKdyufgfK//Jgg5UhsGRASbqIPuGi8c2oi9XbBusRhAW1AGCQnqRh4evjNR5KOHFICeUE6l/ss
+        jJZ8wRC1o9NnMBHJp9ainZppGppmrS3cNsasDfLmmN7Stp9+J3V4go22V+6sefzgKHe3f/3I7g0M
+        vz9EA2K5T96GZO+NXve9qZ4QpwZVK/q5GkXXCdnNY6Uq0axfxHoaRkmZleRz+s4Un1/r31Pk5QEA
+        AA==
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:56 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://fup-eu-west-1.figshare.com/upload/e06173c4-ad56-4d5a-aa19-087ab3ea03bd
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA22MywrCMBBF/2XWraZ5m7Uibqp7EZk0EyjWVtoIYvHfjYI7d/dx7p0hDRfqwQEx
+        XRnRyBKD0qUMCkvEalUya9ALQiZ8gAKuQWV4xSkIryIzXkrfyGhYYJ7nFVVWmyaDU/skcLqAHq9Z
+        gLDcWs35MrYdnfkiPdKHSpjuU64Pm3q9q7c5uuGYcnKcv6oewFVfbkz7GCdK4FgB1IefU39fuqG5
+        UAAXsZvodXq9AdLWtxDpAAAA
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, DELETE, PUT
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 22 Nov 2022 10:50:56 GMT
+      ETag:
+      - W/"e9-V1rixz5w3IVie6UHQMR5sMftNqE"
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Express
+      X-Robots-Tag:
+      - noindex
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: file_2
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '6'
+      User-Agent:
+      - python-requests/2.28.1
+    method: PUT
+    uri: https://fup-eu-west-1.figshare.com/upload/e06173c4-ad56-4d5a-aa19-087ab3ea03bd/1
+  response:
+    body:
+      string: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, DELETE, PUT
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Tue, 22 Nov 2022 10:50:56 GMT
+      ETag:
+      - W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Express
+      X-Robots-Tag:
+      - noindex
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python-requests/2.28.1
+    method: POST
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288622
+  response:
+    body:
+      string: "<html>\n <head>\n  <title>202 Accepted</title>\n </head>\n <body>\n
+        \ <h1>202 Accepted</h1>\n  The request is accepted for processing.<br/><br/>\n\n\n\n
+        </body>\n</html>"
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '157'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Tue, 22 Nov 2022 10:50:56 GMT
+      Location:
+      - https://api.figshare.com/v2/account/articles/21602406/files/38288622
+      Server:
+      - nginx
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288622
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA5WQyW7DMAxEfyXwud7X5GcESqJjIbIkaMnSov9e062BXHucIedxpK8sOW1Bsmhv
+        aLLLKcNqqMdWdDnIfsg72UMOUJ/zahqBtwhVy2X2cTpyyWtKkRMixBRIKcFCEgJDIN95vCt8MJoj
+        jQ9DGea8vfq/PfLQs/hyeCBVYBAjiAWpIXOJ6419Rx+UpbYz6IC0JzfRTs00DU2zaQPrzpiVRtYU
+        8Rn3guqT3OEXrJW5MWv0640j7cO8P2uJ0YVLWZpjgL6Y1TUs4LEQdi3pQCiPy/uR5JxWW99V9oQ4
+        Nyhb3s/VyLuOi24eK1nxZvtYrKdhFJTZSC7Ff2S+fwA63hb5uAEAAA==
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:56 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/articles/21602406
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWyk0tLk5MT1WyUlByzSvJLKlUyMsvUUjLL81LsVJwLCrJTM5JDUstKs7Mz1PS
+        UVBKzk9BUuuXX+IGUqlUCwCxKsiFSQAAAA==
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:56 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA81YbW/bNhD+K4I/bUBkS9SL5XwrlnXA0GHDmn5pUQgnkpK4SKRKUW6TIv995EmK
+        ZTdtk3btChQMdbyXh/dC3/X9qhQN71fn3qv3q6FrFLDcqCsuLWVFgyLaRSnxCQ0LP05Y4hdBwvwo
+        LWkZ8igDQldn3iw36MZJOUpvwAxO6wr2IBooGu7IneZ7wd/m7pi705lwxOUoXOfmukMe8844quhz
+        MAZozR3CvBuKRtB8z3UvlENbQtNzx8fsR5SRLEvD1H5LaFGNu2cerCdtvbhx1HRU3Ah5lSvZXC/0
+        MPVWLq9VG9P155uNnA+4Xpei6mvQfE1Vu0FHbmbLaGToukZYvC1LnIqUF0lIaEGSZLuNYppGZVpC
+        mPAyDXm5K52M1dQN5hEyt2feh5HLWBiQmCY+pdHOjxmJ/YLGhQ+kABrzICEx/NCR251GLvxekdvd
+        F7kCdiyKSBZGsCWkINsIdokNQ8RYlrFdfF/kPitzb+R4kIbbiMY+sCS1kUvABwh3fpBtoYg4BFHB
+        Phc5691+oJT3/f8QOkJOQ0e+U+gIuS90O8JZVCRlsC3i2BZBuQ1YUBDrWR5m6ZbeF7rPyty+tlKa
+        92rQlOdGmMZdTA5Ns6QzJQ7USquhy+/O0GMYNzr0RrV5KXjDpofYeqcFycAovfQOshxCxCevcmOE
+        rJzo+9UeGmHlbHTG71bIvOGyMrX9DC13C+8OBJIEt87rvIShMbkVHlB1fPli/TfvOWhaX4ABl6p3
+        Mf3LJUFfc41p8ymRB16EadW5+H5wGdXNF3m1AnwdAY1CjxeHG7cWFa6YxAXqKJCpwOSn+MzRcX/t
+        VoYUhvysL9wf3uAqx9WHYdpUxbQZUJ4rXMd9749Y7IZOdL99N22kmDZ7NMMRLke1JZovkaFEDSXC
+        qpBeYW1XiKdG2Ro5a+SsR7g1KhIoIFBAqLFYcUVj/+Dp1bhe4driipe8Qv4GtTXI3+zd2iJni+Zb
+        5GzRcIsQJfJLhCWRRyKPGp8ZtNUhvTPj6o+h0GhOI+weTfTI1r/BVY+r34AZcwCx9G/dalCrQZs2
+        Zd2K7AYtDAwvNaDOYUxI9NdN7dcg+8PWrF4jOqC8Vo19Rlzi/VIr1XNPlJ5UxvtVVi6vp2evtQUh
+        OixrzNplBTwDWQ1Q8aMCeETCu8q1Dxh8ZfWGQYDle3KrS9Fyjyr7SDuIS9zHJ18B/r95dk5wX0Dr
+        PX8zWMeceU/a3nDNoD3C/xtXjaJo5odDH6+zXfQxtN4zJSthBvbjeT0h62j7CeD2z9fifnyqRw9M
+        9adKt2COwE+kL4Tr2o5TpCc2n9m2xTPKsxfT4Fl94JkajFfwxgbZnZjaVtmgNZfGE4a3D3hR3C+m
+        5zR/Q+AXXIs9Z95TrR4E6YT9G6F6bs15T/oHAFpwfr9MJB9kYnJvJl7wpjTeCymwNzbXniq9S05r
+        aUupuj7K0D91BVLcTBaPb+N+pIBSNUgzdogkJVGWuXqAwdRKzw0i9ttRHIaB66ZL22Lms/7fVS29
+        C8Xn/p0aC2rhFhuUO94cf781FWxuSBHC3GKftuEu29exGday2YA2grrm2xGtQzf5hoSpnTqDdGyw
+        eqoFNnBOwx/XnuG98ZZkBC6ZDcShS54IdjiwPZ69qkNzGDeCs+WYwzSUy7kizOye2hC7Tp5Nww4J
+        CPHD0CfkMgzOE/svfIktjWKiFJ9kTF9OLhzHnuW40+dUyVIwW+ICmuOTlhtwPrG9PlWaLQ6XMvYU
+        +tE3COcgtCRbs1z2fM7TYTFlTCGcvsZAuY9b7Jowt9F79iHnldKC31E0L7l9nOiBUsM4jll3uIFq
+        CVkYmGNoc+rMw+z6yTnr53PPRrUEoZsxuGvvdAhYexdjcqy9L0gh60veFqArxZdenGhz4CYHzNSp
+        3E+p04SGTp2Jx66eqYuhw7lmrMIJlXPtrOn47pjyOO6hMttxsoPBkyqCThwPsXuymYr+4JKlI7pp
+        4mIndzb10BazETvECcnv3rvohHRX8pOvcc7AkXS8YZZk6fQ4dPbht3Zyi/OrYKOu8X8MHqLqoyom
+        OLVpj9x4pOChQE6VPCIdje2ebZFgMd7e/gtWRlmdORUAAA==
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:57 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"name": "file_3.txt", "size": 6, "md5": "797b373a9c4ec0d6de0a31a90b5bee8e"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '76'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: POST
+    uri: https://api.figshare.com/v2/account/articles/21602406/files
+  response:
+    body:
+      string: '{"location": "https://api.figshare.com/v2/account/articles/21602406/files/38288625"}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '84'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:57 GMT
+      Location:
+      - https://api.figshare.com/v2/account/articles/21602406/files/38288625
+      Server:
+      - nginx
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288625
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA42Qy27DIBBFfyXyusSOiR/kZ9AA4waFGARD0rTqv9c4stpKXXQ5d+498/iocnAe
+        jCR/wbk67SqFbd+KDpngCOwoOsXUKHp21G3DtRGqa4fqZbflcnQldSYK6VTXUw4MM7tjInbYT/Y1
+        nSHiXvtr/QzU/+UnAsqpsHVEIDRFDBFvFu+yNLH0NmH2JOEG1oFyWJxFxSjpEVZfkWySQAT6jOVc
+        GbJyVssbxmR9OX0Cl7D4zFLwsR3Hvu2WeobrypisQ8n39Ebrfva9qP0T7Ox8kX52jx8c4+/zXz+a
+        twbG3x8qA1K9TV6H5BCcXfa9mq4gBjEoPnAQ+oi6Mb3BBvgBRKM6hTiuly+kkOk7U31+AdJOV6fl
+        AQAA
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:57 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://fup-eu-west-1.figshare.com/upload/be26295e-93ea-495b-b896-4c203cd9b527
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA22MywrCMBRE/+WuW41JkyZZK+KmuheRPG6g9CVtBLH0340Fd+5mzhxmhjg02IMG
+        i1RQxTFXDE1eKG5zK5XIC0cJc15ZTkvIoPM8yaUqLSuZUa5AR7zwSAzbGUUst4gSkzjVbwQtMuhN
+        lwIwSaUUlG9D3eKdbeIrfq1o4nNK8+VQ7U/VMaGHGWMi13lN1QB6t3pjPIcwYQRNMsDe/xr/+9IO
+        rkEPOph2wuW2fAB2OscL6QAAAA==
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, DELETE, PUT
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 22 Nov 2022 10:50:57 GMT
+      ETag:
+      - W/"e9-qVldt5xODImS35YsSO49Yi1OrAI"
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Express
+      X-Robots-Tag:
+      - noindex
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: file_3
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '6'
+      User-Agent:
+      - python-requests/2.28.1
+    method: PUT
+    uri: https://fup-eu-west-1.figshare.com/upload/be26295e-93ea-495b-b896-4c203cd9b527/1
+  response:
+    body:
+      string: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, DELETE, PUT
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Tue, 22 Nov 2022 10:50:58 GMT
+      ETag:
+      - W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Express
+      X-Robots-Tag:
+      - noindex
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python-requests/2.28.1
+    method: POST
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288625
+  response:
+    body:
+      string: "<html>\n <head>\n  <title>202 Accepted</title>\n </head>\n <body>\n
+        \ <h1>202 Accepted</h1>\n  The request is accepted for processing.<br/><br/>\n\n\n\n
+        </body>\n</html>"
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '157'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Tue, 22 Nov 2022 10:50:58 GMT
+      Location:
+      - https://api.figshare.com/v2/account/articles/21602406/files/38288625
+      Server:
+      - nginx
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288625
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA5WPyW7DMAxEfyXwuV4qeVN+RtBCx0IUSdCSNC367zXdGsi1xxlyHodfVQnWC82z
+        v4KrzqdKAhkJG6BmFETds0HWcmZj3SvSUaWZHMhUvZ2OXIkWU+ikLHJJqIziqSgFKaEfItwNPDjO
+        AceHYRwP0V/i3x56EHl+BjiQJnGRs1ArYEMeirQb+w4xGY9tF2ET4J7eBJ3JPI9k2LQTt52xGAuc
+        Nvkj7wXNJ7rjL9gad+Xe2ecLR/uHe31rzTmkc9u6YwCxWcwlrSJCo/ytxQOpPS7vR0oI1mx9b3pA
+        xMQmSScqmOpBdXrU0An6LlgnBwkwA2Y2Uij5H5nvH2Axsme4AQAA
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:58 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/articles/21602406
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWyk0tLk5MT1WyUlByzSvJLKlUyMsvUUjLL81LsVJwLCrJTM5JDUstKs7Mz1PS
+        UVBKzk9BUuuXX+IGUqlUCwCxKsiFSQAAAA==
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:58 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:58 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"name": "file_4.txt", "size": 6, "md5": "74a02cce629c5f4c0bd3c0b60db915e4"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '76'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: POST
+    uri: https://api.figshare.com/v2/account/articles/21602406/files
+  response:
+    body:
+      string: '{"location": "https://api.figshare.com/v2/account/articles/21602406/files/38288628"}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '84'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:59 GMT
+      Location:
+      - https://api.figshare.com/v2/account/articles/21602406/files/38288628
+      Server:
+      - nginx
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288628
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA42QSW7DMAxFrxJ4XcVDJMfOZQRaohshiiRoSJoWvXtNB0ZboItuCPCT/3H4qEqw
+        HrTM/oKuOu0qEPOkm7Fhgx4F40oNDPDYM96LtuGC44iietltvhItuc45h3Sq67kEhoXdMWXW7mfz
+        ms4Qca/8tX4a6v/yU4ZcErFVRMioSQwRbwbvkopItU1wPku4gbEwWaROUjHK/AhrH0kmScgZ1Bnp
+        XBnKZI2SN4zJeDp9BpuQ+vSSHIZuGPpuWHIH15UxG4uS7/NbXvcz76T2T7A17iK9s48fHO3v7q8f
+        ua2A8feHaECqt8nrkBKCNcu+Vy0IceTQdEph341KzFw1kz4soW/0NLYCOXkWUij521N9fgHbOU+C
+        5QEAAA==
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:50:59 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://fup-eu-west-1.figshare.com/upload/a5fbd090-8d95-4cc8-ae76-46510454e9e5
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA22MywrCMBBF/2XWraZtJiZZK+KmuheRNJlA6UvaCGLpvxsL7txc7uNwZwhDQz1o
+        MOgrxxRLpVOYcmtlamgnUi4wYxw5KUJIoHMY4R03LLeWRK4sem5Z5YoogrlKZUg8glP9JtAigd50
+        0UAhcylFLre+bunON+EVvlQw4TnF+XIo96fyGKuHGUNsrvPqygF0tnJjOHs/UQDNEqDe/RL+fWkH
+        25AD7U070XJbPmF3w6PpAAAA
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, DELETE, PUT
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 22 Nov 2022 10:50:59 GMT
+      ETag:
+      - W/"e9-/S6EYMOPiIqAwWnciHuPWECwk9Y"
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Express
+      X-Robots-Tag:
+      - noindex
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: file_4
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '6'
+      User-Agent:
+      - python-requests/2.28.1
+    method: PUT
+    uri: https://fup-eu-west-1.figshare.com/upload/a5fbd090-8d95-4cc8-ae76-46510454e9e5/1
+  response:
+    body:
+      string: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, DELETE, PUT
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Tue, 22 Nov 2022 10:50:59 GMT
+      ETag:
+      - W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Express
+      X-Robots-Tag:
+      - noindex
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python-requests/2.28.1
+    method: POST
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288628
+  response:
+    body:
+      string: "<html>\n <head>\n  <title>202 Accepted</title>\n </head>\n <body>\n
+        \ <h1>202 Accepted</h1>\n  The request is accepted for processing.<br/><br/>\n\n\n\n
+        </body>\n</html>"
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '157'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Tue, 22 Nov 2022 10:51:00 GMT
+      Location:
+      - https://api.figshare.com/v2/account/articles/21602406/files/38288628
+      Server:
+      - nginx
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288628
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA02P4Y6DIBCEX6Xx96nUgsW+DEFYlUiBALbXu9y7H+vFXP+Q7OzON8N3tQXrpRbZ
+        r+Cq26mSbBo1GUjN9cBqqhSvJVz7mvbsTCijMACrPk6Hb4sWXaikLPOWcDJKqAXUatyMixDhYeAp
+        8ABwfwjGiRD9HCElvEMNosivAAfTJCFzloWGFUXYRlvgD4jJeKw7SZsA73QZLrzjvO94mZ2874zJ
+        WBC0yZ95b2i+UO3/wNa4VXhnX28c7Z/u/V9LziHd2tYdC4jNZOa0yAiN8vcWA1J7JO8hWwjWlL53
+        zRBxpZJ0SkHfDYpNVJFRX8rTEz0OZwYUPYUUtvzvqX5+Aau7WUqZAQAA
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:00 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/articles/21602406
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWyk0tLk5MT1WyUlByzSvJLKlUyMsvUUjLL81LsVJwLCrJTM5JDUstKs7Mz1PS
+        UVBKzk9BUuuXX+IGUqlUCwCxKsiFSQAAAA==
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:00 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:00 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"name": "file_5.txt", "size": 6, "md5": "3d58b0ebc69908c51a9273135f3aac3f"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '76'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: POST
+    uri: https://api.figshare.com/v2/account/articles/21602406/files
+  response:
+    body:
+      string: '{"location": "https://api.figshare.com/v2/account/articles/21602406/files/38288631"}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '84'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:01 GMT
+      Location:
+      - https://api.figshare.com/v2/account/articles/21602406/files/38288631
+      Server:
+      - nginx
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288631
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA42Qy27DIBBFfyXyusSxCQnOz6ABhgaFAOKRNK367zWOrLZSF13OnXvPPD66Gl0A
+        LUq4oO9Om86AkdpME5Fyx8leMkNgYiPZ01GiPDKOWncvmzVXk2upcykxn/re1EiwkjvmQoatsa/5
+        DAm3Klz7Z6D/Lz8XKDU3tkoIBRcxJrxZvIvWxNZbBR+KgBtYB9JhczYVkyiPuPiaZLOAUkCdsZ0r
+        YpXOKnHDlG1opxtwGZtPzwXlI+cHOsy1h+vCMNahYNvyVpb97HtTD0+ws/4ignePHxwd7v6vH/m1
+        gen3h9qA3K+TlyE1Rmfnfa+aNQTVjMsdSnWYph1XbIBpPNKBMkMBFDUtM5NiLd+Z7vMLYNkcLeUB
+        AAA=
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:01 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://fup-eu-west-1.figshare.com/upload/fafbdf99-bb08-4b5f-a952-432beb758edd
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA22MzQ6CMBCE32XPoEBdaHvWGC/o3RizpbuJEcFITYyGd7eQePM2P9/MB0J/5Q4s
+        CInzYkzqXKbTlUNJyWCRrlTh2FWo2XtI4OYxwsqjdhm7pjQm0w3mZIpK5QpFETVKIjhc3gy2TKCj
+        G08TXWhdqnwpl5bPuAivMFGBwnOI9WFTr3f1NkZ3eoSYHD+zqnuw+cw9wl5k4AA2S4A7/3P496Xt
+        myt7sELtwONp/AIwisM36QAAAA==
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, DELETE, PUT
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 22 Nov 2022 10:51:01 GMT
+      ETag:
+      - W/"e9-UcMO05J6U405Q5xw9ghl0xLCQlM"
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Express
+      X-Robots-Tag:
+      - noindex
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: file_5
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '6'
+      User-Agent:
+      - python-requests/2.28.1
+    method: PUT
+    uri: https://fup-eu-west-1.figshare.com/upload/fafbdf99-bb08-4b5f-a952-432beb758edd/1
+  response:
+    body:
+      string: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, DELETE, PUT
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Tue, 22 Nov 2022 10:51:01 GMT
+      ETag:
+      - W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Express
+      X-Robots-Tag:
+      - noindex
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python-requests/2.28.1
+    method: POST
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288631
+  response:
+    body:
+      string: "<html>\n <head>\n  <title>202 Accepted</title>\n </head>\n <body>\n
+        \ <h1>202 Accepted</h1>\n  The request is accepted for processing.<br/><br/>\n\n\n\n
+        </body>\n</html>"
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '157'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Tue, 22 Nov 2022 10:51:01 GMT
+      Location:
+      - https://api.figshare.com/v2/account/articles/21602406/files/38288631
+      Server:
+      - nginx
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288631
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA5WPyW7DMAxEfyXwuY4dK3Lk/IyghYqFKJKgJUuL/ntNtwZy7XGGnMfhV1OjC0Lz
+        Eq7gm/OuMcJIbaaplbJn7VFS04qJDu2RDBLkiTLQuvnYbbmaHKbQyUWUmlFZxXNVCnJGPya4W3hw
+        nAOON8N6HlO4pL899CDx8oqwIW3mohShZsCGPFbpFvYdUrYB2xrhMuCeXgRhA2MjOSzai9vKMNYB
+        p/vyLGtB+4nu+At21l958O71xtHh4d/fmkuJ+dx1fhtA2ht7ybNIsFfh1uGB3G2X1yM1RmeXvjdN
+        EUE0ZbIHqcZp6pmiBzENJ3Ig1BAhFDGYWUixln9kvn8Acwxt8bgBAAA=
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:01 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/articles/21602406
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWyk0tLk5MT1WyUlByzSvJLKlUyMsvUUjLL81LsVJwLCrJTM5JDUstKs7Mz1PS
+        UVBKzk9BUuuXX+IGUqlUCwCxKsiFSQAAAA==
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:01 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406
+  response:
+    body:
+      string: !!binary |
+        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
+        48PD79TEYXVnGgAA
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:01 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"name": "file_6.txt", "size": 6, "md5": "045e4d119474a0ffe08e1632ca286c9c"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '76'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: POST
+    uri: https://api.figshare.com/v2/account/articles/21602406/files
+  response:
+    body:
+      string: '{"location": "https://api.figshare.com/v2/account/articles/21602406/files/38288634"}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '84'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:02 GMT
+      Location:
+      - https://api.figshare.com/v2/account/articles/21602406/files/38288634
+      Server:
+      - nginx
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288634
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA42Q227CMAyGXwX1eqUHSkl5mcgkzogISZQ4MDbt3VcXVdukXezO/u3/8+GjKtEF
+        0JLCBX113FRGYz91BuuDmvb10AlVg54j1R6wG9uTQhDVy2b1leTYdSaK+dg0psQaS33HTHW3NfY1
+        nyHhVoVr8zQ0/+VnAiqZ2SohEGoWY8KbxbvkInJtFXwgCTewDk4OuZNVTJIeceljyWYJRKDOyOfK
+        WE7OKnnDlG3g0w24jNyn52QneiHG3TDnHq4Lw1iHctzSGy372XdWxyfYWX+RwbvHD44Od//Xj/xa
+        wPT7QzwgN+vkZUiJ0dl536veM6Id9jjorpuGwwCtMdiK+Wm7XkEvRjUp9sykWOjbU31+Afy/TYvl
+        AQAA
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:02 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://fup-eu-west-1.figshare.com/upload/fde291fe-7c95-418c-ad95-c07e160bcea8
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA22MywrCMBRE/+WuW03SJE2zVsRNdS8iMbmB0pc0EcTSfzcW3Lk7M3OYGeLY4gAa
+        vENWUY95aSuRc6psblwiS0qkktwtGgUZ9E4kmXCB3FFa8ZIb4j0SlaSCWcOUtJVNYmjeCFpmMJg+
+        ARSKKSULvvVNhze5ia/4taKJz5Dm877eHetDqh5miqm5zCvVI2i6elM8eR8wgiYZ4OB+Sfx96Ubb
+        ogPtTRdwuS4fKOkZD+kAAAA=
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, DELETE, PUT
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 22 Nov 2022 10:51:02 GMT
+      ETag:
+      - W/"e9-ymGVSe5QXudbbCyfMs/q2IWEVl8"
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Express
+      X-Robots-Tag:
+      - noindex
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: file_6
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '6'
+      User-Agent:
+      - python-requests/2.28.1
+    method: PUT
+    uri: https://fup-eu-west-1.figshare.com/upload/fde291fe-7c95-418c-ad95-c07e160bcea8/1
+  response:
+    body:
+      string: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, DELETE, PUT
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Tue, 22 Nov 2022 10:51:03 GMT
+      ETag:
+      - W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Express
+      X-Robots-Tag:
+      - noindex
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python-requests/2.28.1
+    method: POST
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288634
+  response:
+    body:
+      string: "<html>\n <head>\n  <title>202 Accepted</title>\n </head>\n <body>\n
+        \ <h1>202 Accepted</h1>\n  The request is accepted for processing.<br/><br/>\n\n\n\n
+        </body>\n</html>"
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '157'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Tue, 22 Nov 2022 10:51:03 GMT
+      Location:
+      - https://api.figshare.com/v2/account/articles/21602406/files/38288634
+      Server:
+      - nginx
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288634
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA5WQ227DIBBEfyXyc32/BOdnEIHFRsGAuDhNq/57WVeW8to3dpg5O/BdJKctEzTa
+        B5jidimkgG5uJZRXPo/l0BJeMpFPvLlCOzV3DowUH5czl7zGFCohspgCTpvdlVkyk0plmMZL52FX
+        8KRoAvScgjLUebt4CAF9qIGn8eXg5KpAWYyMr4A1qUt3rTjdwQdlsbJkOgD6RB560hEy9UOeDdsO
+        hlQa6FTFz3i0VF+oTn9grcyDWqNfbxxhn+b9bWuMLtzq2pwX4CuplrAyDxW3W40LQn1uPpYk57TK
+        fTcxIqIZRhhE287DdWCNlNCQ/Jl9x1lHJj5zzGSSS/EfmZ9fEYKldL0BAAA=
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:03 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/articles/21602406
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWyk0tLk5MT1WyUlByzSvJLKlUyMsvUUjLL81LsVJwLCrJTM5JDUstKs7Mz1PS
+        UVBKzk9BUuuXX+IGUqlUCwCxKsiFSQAAAA==
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:03 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA81YbW+kRhL+K8if7iQzhuZlwN+iOIl02tOdLpsviSLUL8XQMdAEGu96V/7vV12A
+        h5llY282sSxZPVBdb11PVVPljxelrmG4uPZ++XgxdrXhqrDmFlqkXMhARHmUMp/JUPhxohJfBIny
+        o7SUZQhRxpm8uPQWubGvnZSjDJbb0Wm94Hdc11zU4MhdD3ca3hVuG9zuQjjhchToC3vfEY99bx1V
+        DwW3lssKnIdFN4pay+IO+kEb523J6wEcn8KXKGNZloYpvre8ITXunEWwm7UN+oOjppPiWre3hWnr
+        +5UeZd6162NV1nbD9dVVu2xAvyv1Yah4DztpmisK5NVimYyMXVdr9LdRiVORgkhCJgVLkv0+imUa
+        lWnJwwTKNIQyL50MaupG+wUyD5fep8hlKgxYLBNfyij3Y8ViX8hY+JwJLmMIEhbzV41cfo5c+FLI
+        5VvICZ6rKGJZGPE9Y4LtI54nCEOkVJapPN5C7kmZTeQgSMN9JGOfqyRF5BLucx7mfpDtuYiAB5FQ
+        rxk5xs6RYy+EHGNbyOUMVCSSMtiLOMYaKPeBCgTDwEKYpXu5hdyTMpvICWApyxPwc4TJj/NE+CLL
+        EUPJgkiqXCRs/6qRS86Ri14KuWQLuX2+F5ErGrywZKBSBQGPQp4HIhEAGWwh96TMJnI8KYUK8sDH
+        skwQL5n5HPaIXJqEQZzEkEPyqpHLzpGLXwq5bBO5mAdMSsBykEkZYxuhIlzSQIkcv1ybt+WTMpvI
+        lRyRK/PcFyLI/Bhr1sdLlvlxxASIfZKBetW3ZRSeI5e8EHJRuIVcpJJMBCBkmudBJhMsHfxuhVFS
+        RpzLaLNDeVJmGzkFLA9L8PfS1VyYSfzi4ZMM9hCmgZDAs1eNXHyOXPpSyMVbyOE9BbEKwzx2lVSW
+        EGQYx4hJzrJU5pvfuSdlHn5FqR4GM/YSCqtt7Q7WjnW9piujj9RDb8aueNyjiBFschysaYpSQ63m
+        eQOj0/BWcWv6dXSI5QgRzFEFa3V7cKIfL+54rVEO0ZneG90WNbQHW+Grq6mGvz8SWBI8uKhDycfa
+        Fig8kur47U+7/8EAvJfVDbfcZeojpv91STBU0FPa/JHIMw+ietM5fD85jOmWg/xywanEOBnlAx2c
+        f3CrONBKSSxIhyAmMVBwqZuX0/O9WxVRFPGrQbgfqGltp9Xn4/xwEPPDSPJgaJ2eB3/yBR/kTPeb
+        9/NDq+eHOzID5C6Q2pLMl8RQkoaS3DoQ/UCX8oH8qUi2Is6KOKvJ3YoUaRLQJKDNVKy0krHfaPd2
+        Wm9pbWilQ94Sf03aauKv79zaEGdD5hvibMhwQy62xN+SWy3xtMRjyG5Htjqid3Za/QmKnsz15PZA
+        JgZiG36ntZ9Wv+Z2ygHyZXjnVktaLdnElHUrsVuyMCo61Eg6xykhKV4fKr/i7XB8tBe/kndcQmVq
+        vEZc4n1bGTOAp0uvNdb7rj24vJ6vvQYLQndU1pS16wp4w9vDyA9wUgBfkPCucvEC419ZvWEQUPme
+        neqtbsCTBi9p5+La79Odr3D+r7l2zvy+4Y334+8jBubS+6YZLPSKNyf+/wCmNpLMvDrv412WR5/z
+        1ntj2oO2o3p9UU/YDueCzzuOP1/r95enevTMVP/e9A23J87PpD/prms7zj09s/kG2xbPGg8P1nMP
+        9XHPVtx6AmoE2e3YCqts7HtoractNM+4UdwX03Oa/0bHb6DXd6C873vzLJfO2P8mr35Ec943wzMc
+        WnG+XCayTzIx2czEG6hL6/3UauqN7b1nSu8tyKrFUjrcn2Tof/oDb/WH2eLpadxHiktpxtZOHSJL
+        WZRlrh74aCvTLw0i9dtRHIaB66ZLbDGLRf+/TNV6NwaW/l1adGoVFgTlkbeg73cvtVoaUnJhabHP
+        23CX7bvYjru2vuK91dI1346IAb0qrhjOJywO0qnBGmSvqYFzGv5971kYrLcmk+OtQiCOXfJMwOEA
+        ezw8qvPmOG4El+spR/W8XM8VsQNLIsSuk1fzsMMCxvww9Bl7GwbXCf6FP1NLY5Qu9ecZw+uA/TyH
+        cBp71uPOUEjTllphiWten+40YLmLCfb60vRqtbmWwV0+TLEhd45CazKahXaAJU/H1ZQxQzi/TUC5
+        lwfqmii3KXp4kcPB9BoeKT2UgJeTPFIqPo1jGA43UK1d1pYvGGJOXXqUXf9wwfrntYeollz39QTu
+        zjsfAnbezZQcO+9PpBDGEhrB+4OBdRRn2gLcHICFOpf7OXWe0CioC/E01At1NXS40ExVOHvlQrto
+        Oj07pTyNe6QMO051NHhWRbzTp0PsHbuai/4YknUgunniUmdnttXYiMUIDnG6hcf7LjojPZb8HGua
+        M2gknU6YJVk6Xw4dXvxop0A/v8pt0jX9x+A5qj6rYnanss1JGE8UPNeRcyVfkI4Wu2csEirGh4f/
+        A5/yuAUgHAAA
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:03 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"name": "file_7.txt", "size": 6, "md5": "1813845c8e402f8d0482a5d274dc5596"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '76'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: POST
+    uri: https://api.figshare.com/v2/account/articles/21602406/files
+  response:
+    body:
+      string: '{"location": "https://api.figshare.com/v2/account/articles/21602406/files/38288637"}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '84'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:03 GMT
+      Location:
+      - https://api.figshare.com/v2/account/articles/21602406/files/38288637
+      Server:
+      - nginx
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288637
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA42Q2W7DIBBFfyXyc4mDV5yfQRiGBoUAYnGaVv33ehxZbaU+9HHu3Htm+ahKsF4o
+        nv0VXHU+VKxvp0bNmoz01JFOziOZKGgyU90poHSASVQvhz1XosXUJeeQznWtSyBQyB1SJvSozWu6
+        iAhH6W/1M1D/l5+yyCUhW0YQGRSKIcJi4M6xCdjbBeczF4swVswW0IkqRJ4fYfOhZBIXOQt5ATyX
+        hzJbI/kCMRmPp2thE6BPrUXLGsaGdlxrJ24bQxsLfDzmt7ztZ95RHZ5ga9yVe2cfPzjK391fP3J7
+        A+LvD+GAVO+TtyElBGvWfW+qRwRltGVdLxl0p0YzdepYI3rVjJ2SfT8NmFlJoeTvTPX5BbAy8iPl
+        AQAA
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:04 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://fup-eu-west-1.figshare.com/upload/85392dbf-7104-4cb7-91ef-b1f4de116e9a
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA22MywrCMBRE/+WuW21ezW3Wirip7kUkbW6g9CVtBLH0342CO3czZw6zQBhbGsAA
+        KlFwV/lUs0ymsq50WjDyacW8dMRYToWFBHqnosyQCZSqRpIZ9+gyidwqx7V0tVJFHsW5eRGYPIHB
+        9jGAQI6YC731TUc3vQnP8LGCDY85zud9uTuWh4judgqRXJZvKkcw7OtN4eT9TAFMlgAN7tfU35du
+        rFtyYLztZlqv6xs7JOtS6QAAAA==
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, DELETE, PUT
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 22 Nov 2022 10:51:04 GMT
+      ETag:
+      - W/"e9-tOSGnj3hVW5MyKa3bgIzXh0ANR8"
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Express
+      X-Robots-Tag:
+      - noindex
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: file_7
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '6'
+      User-Agent:
+      - python-requests/2.28.1
+    method: PUT
+    uri: https://fup-eu-west-1.figshare.com/upload/85392dbf-7104-4cb7-91ef-b1f4de116e9a/1
+  response:
+    body:
+      string: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, DELETE, PUT
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Tue, 22 Nov 2022 10:51:04 GMT
+      ETag:
+      - W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Express
+      X-Robots-Tag:
+      - noindex
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python-requests/2.28.1
+    method: POST
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288637
+  response:
+    body:
+      string: "<html>\n <head>\n  <title>202 Accepted</title>\n </head>\n <body>\n
+        \ <h1>202 Accepted</h1>\n  The request is accepted for processing.<br/><br/>\n\n\n\n
+        </body>\n</html>"
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '157'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Tue, 22 Nov 2022 10:51:04 GMT
+      Location:
+      - https://api.figshare.com/v2/account/articles/21602406/files/38288637
+      Server:
+      - nginx
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288637
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA5WP3W6EIBCFX2Xjdf1BUXFfhqAMShaBALrdNn33OjYme9vLOXPON2e+s80bJyRP
+        7gE2u98y1jZDLUeV96SiOZ3GPh8IqHwkikogpINBZB+3K7cFgylUYhJpizitbtd2PphcaSsMLn2A
+        XcOTownQcwnach/cHCBG9KEGgaeXh4urIxcpiWkBrMn9Nho98R1C1A4rK2EioE8eQ8NqxrqmP2Yr
+        1pOhtAHeF+kznS31F6rdH9ho++DOmtcbR7qnff9tScnHe1naawGhUHqOiwhQTG4t8UAsr8vnkc17
+        o4++q2wRQRhpGG0nBrSqFZMVZbVoZd1TObXt0GHmIPkt/SPz8wusAR0avQEAAA==
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:04 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/articles/21602406
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWyk0tLk5MT1WyUlByzSvJLKlUyMsvUUjLL81LsVJwLCrJTM5JDUstKs7Mz1PS
+        UVBKzk9BUuuXX+IGUqlUCwCxKsiFSQAAAA==
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:04 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:04 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"name": "file_8.txt", "size": 6, "md5": "e4492ed6bafa3b349caf653a02864d67"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '76'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: POST
+    uri: https://api.figshare.com/v2/account/articles/21602406/files
+  response:
+    body:
+      string: '{"location": "https://api.figshare.com/v2/account/articles/21602406/files/38288640"}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '84'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:05 GMT
+      Location:
+      - https://api.figshare.com/v2/account/articles/21602406/files/38288640
+      Server:
+      - nginx
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288640
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA42Q3W6DMAyFX6XieimFUBr6MpEhzho1TaL80HXT3n2YCm2TdrFLH/t8PvZHVYL1
+        oGT2V3TVeVeJadBHzk+MN0KxTp8ObOgawXjfHdq2b1qtdPWy23wlWnJdcg7pXNe6BIaF3TFl1uy1
+        eU0XiLif/K1+Gur/8lOGXBKxp4iQUZEYIs4G75KaSL1NcD5LmMFYGC3SJKkYZX6EdY4kkyTkDNMF
+        6VwZymjNJGeMyXg6XYNNSHNqKbhohVgiLbWD28rQxqIU+/yW13zmndT+CbbGXaV39vGDo/zd/fUj
+        tzUw/v4QLUj1tnldUkKwZsl7U0dCYNcNLap+BA185N0wge6PHA7t4lD9iTwLKZT87ak+vwBAsJpd
+        5QEAAA==
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:05 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://fup-eu-west-1.figshare.com/upload/8c9f5337-318d-4f70-9418-364022612fdf
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA22MywrCMBRE/+WuW03zapq1Im6qexGJzb1Q+pI2glj678aCO3czcw4zQxga7MGC
+        qQpSQuSpyIxPJeUsLWRmUqEl41xnnDxBAp1XUUYpC45e3x05cReyqBxpJRzjRkuv8yhO9RvB6gR6
+        18UAwnATIdtS3eLNbMIrfK3gwnOK+Lwvd8fyEKeHG0NcLvOaygFstnpjOBFNGMCyBLD3v6b+vrRD
+        1aAHS66dcLkuH3m4PVLpAAAA
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, DELETE, PUT
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 22 Nov 2022 10:51:05 GMT
+      ETag:
+      - W/"e9-1+xTZLM6+z9Xsw8w4MEGv0gTM/4"
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Express
+      X-Robots-Tag:
+      - noindex
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: file_8
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '6'
+      User-Agent:
+      - python-requests/2.28.1
+    method: PUT
+    uri: https://fup-eu-west-1.figshare.com/upload/8c9f5337-318d-4f70-9418-364022612fdf/1
+  response:
+    body:
+      string: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, DELETE, PUT
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Tue, 22 Nov 2022 10:51:05 GMT
+      ETag:
+      - W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Express
+      X-Robots-Tag:
+      - noindex
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python-requests/2.28.1
+    method: POST
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288640
+  response:
+    body:
+      string: "<html>\n <head>\n  <title>202 Accepted</title>\n </head>\n <body>\n
+        \ <h1>202 Accepted</h1>\n  The request is accepted for processing.<br/><br/>\n\n\n\n
+        </body>\n</html>"
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '157'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Tue, 22 Nov 2022 10:51:06 GMT
+      Location:
+      - https://api.figshare.com/v2/account/articles/21602406/files/38288640
+      Server:
+      - nginx
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288640
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA5WPS27EIBBErzLyOv7iD57LIGwaGw0GBNiTSZS7h3ZkabZZdnXV6+rvbHfacsGi
+        fYDJ7reMzqPsCBlyUlORt3Ko8rGtaU76tmqavm6kkNnH7crtXmMKlRB53ANOmz2UWRKTSWW4xqXz
+        cCh4MjQBei5BGea8XTyEgD7UwLP4cnBxVWA8Rj6vgDWZ2yetZnaAD8piZcl1APSJNBDaUJqqptnw
+        7WRIpYHRIn7Gs6X6QrX/A2tlHswa/XrjCPs077+tMbpwL0tzLcAXUi1h5R6K2W4lHgjldfk8sjun
+        Veq7iQ4R0LZjA6KfuORkIu04c9l3hFdNSoh+wEwiuT3+I/PzC2jmK5S9AQAA
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:06 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/articles/21602406
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWyk0tLk5MT1WyUlByzSvJLKlUyMsvUUjLL81LsVJwLCrJTM5JDUstKs7Mz1PS
+        UVBKzk9BUuuXX+IGUqlUCwCxKsiFSQAAAA==
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:06 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:06 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"name": "file_9.txt", "size": 6, "md5": "dd6838271569dbfceb004806672be7d9"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '76'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: POST
+    uri: https://api.figshare.com/v2/account/articles/21602406/files
+  response:
+    body:
+      string: '{"location": "https://api.figshare.com/v2/account/articles/21602406/files/38288643"}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '84'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:07 GMT
+      Location:
+      - https://api.figshare.com/v2/account/articles/21602406/files/38288643
+      Server:
+      - nginx
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288643
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA42QTW7DIBCFrxJ5XWI7iW2cyyAMQ4NCAMHgNK1693ocWW2lLrpB4r153/x8VCW6
+        ILXAcAVfnXfVCOrYtWpkg2k5Oyll2Kg7YGp5ukFNg2x49bLbciU5Sl0QYz7XtSmRQWF3yMjavbGv
+        +SIT7FW41c9A/V9+RoklE1slkAiaxJhgtnAXZAJ5m+ADCjlL6+TkgCpJhSTwEdc6kmwWElGqC9C6
+        IpbJWSVmSNkGWt1Il4Hq9PI58gPn/em4/L28rQxjHYhxj2+4zmffSe2fYGf9VQTvHj84Otz9Xzfy
+        mwHp94WoQa63zmuTEqOzy7w33RFC654v/tB2/agno2BqmhNv+n44TDDokTILKRb8zlSfX00TDO/l
+        AQAA
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:07 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://fup-eu-west-1.figshare.com/upload/9ec351c9-7f18-4ccf-9d5e-cd5e57cb7a08
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA23MywrCMBAF0H+ZdaPpI8+1Im6qexFJkwmUvqSJIJb+u1Fw52a4c+cwC8SpwxE0
+        KLQly60iwueSVNZ6ohxDYtNgwjbCUAkZDI4l7ByXpSxEzrhyjbfYUFpJyrkoGhROJRjaF4LmGYxm
+        SAESl5JX5da3Pd7UJj7jR0UTHyGdz/t6d6wPqbqbOabmsnxTPYHOv26OJ+8DRtA0Axzdb2N/v/ST
+        7dCB9qYPuF7XN9hGyUXpAAAA
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, DELETE, PUT
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 22 Nov 2022 10:51:07 GMT
+      ETag:
+      - W/"e9-yZfILZ/Ry4zbjQL+7P57BWlOyLo"
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Express
+      X-Robots-Tag:
+      - noindex
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: file_9
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '6'
+      User-Agent:
+      - python-requests/2.28.1
+    method: PUT
+    uri: https://fup-eu-west-1.figshare.com/upload/9ec351c9-7f18-4ccf-9d5e-cd5e57cb7a08/1
+  response:
+    body:
+      string: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, DELETE, PUT
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Tue, 22 Nov 2022 10:51:07 GMT
+      ETag:
+      - W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Express
+      X-Robots-Tag:
+      - noindex
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python-requests/2.28.1
+    method: POST
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288643
+  response:
+    body:
+      string: "<html>\n <head>\n  <title>202 Accepted</title>\n </head>\n <body>\n
+        \ <h1>202 Accepted</h1>\n  The request is accepted for processing.<br/><br/>\n\n\n\n
+        </body>\n</html>"
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '157'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Tue, 22 Nov 2022 10:51:07 GMT
+      Location:
+      - https://api.figshare.com/v2/account/articles/21602406/files/38288643
+      Server:
+      - nginx
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406/files/38288643
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA5WPyW7EIBBEf2Xkc7yNN5ifQRjaYzQYEMssifLvoZ1YmmsuSF3V9br4KpLTlksW
+        7Q1McTkVFEQ3tIKW09KSshdiKakcoBT5GSYxT7whxcfpyCWvMYVKiDymgJMSLCQhIATUnYe7ggdD
+        H9A+BGWY8/bq//ZQA8/iy8GBVIHxGLlYARsyl2ad2XfwQVlsu3AdAPdkHjpyJmTsuzwbvu2MRWlg
+        tIrPuBdUn6iOv2CtzI1Zo19vHGkf5v1ba4wuXOraHAb4alHXsHIPlbBbjQdCfVzejyTntMp9Nzkg
+        QsqRZH9qh5HKeREwN01PmnGczjNMkmImk1yK/8h8/wDhKkSruAEAAA==
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:07 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/articles/21602406
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWyk0tLk5MT1WyUlByzSvJLKlUyMsvUUjLL81LsVJwLCrJTM5JDUstKs7Mz1PS
+        UVBKzk9BUuuXX+IGUqlUCwCxKsiFSQAAAA==
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:07 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA81YbW/cyA3+K4I/tUC0lmY0evG3Q90rUKRo0ct9ucNhMS+clWq97EkjJ07g/14O
+        pfXuKsqtc+m5BoyxxCE5HD4kRe6nK1vVMFzdBD9/uhr3dSfN1nV30CLlSkeKFzxlIdOxChNhRKgi
+        YUKeWm1j4Llk+upNcJAb+9pLecrgpBu91it5L6taqho8ed/DfQXvt34b/O6BcMblKdBv3cOeeNwH
+        56nVsJXOSV2Ct3C7H1Vd6e099EPVeWutrAfwfAZfeM7yPI1TfG9lQ2r8PbfRZtY2VB89NZ0U11V7
+        t+3a+uFEj+net6fXKp3bDzfX1+1hA/qNrXZDKXvY6K65JkdeH06mQ8b9vq7Q3sYIryIFJWKmFRMi
+        y3iiU25TK2MBNo3BFtbLoKb96L5C5vFN8DlyuYkjlmgRas2LMDEsCZVOVCiZkjqBSLBEvmrkiiVy
+        8UshV6whp2RhOGd5zGXGmGIZl4VAGLgxeW6KZA25izKryEGUxhnXSSiNSBE5IUMp4yKM8kwqDjLi
+        yrxm5BhbIsdeCDnG1pArGBiuhI0ylSSYAzaLTKQYOhbiPM30GnIXZVaRU8BSVggIC4QpTAqhQpUX
+        iKFmEdemUIJlrxo5sUSOvxRyYg25rMgU90mDBUtHJjUQSR7LIlJCAeSwhtxFmVXkpLDKREUUYloK
+        xEvnoYQMkUtFHCUigQLEq0YuXyKXvBRy+SpyiYyY1oDpoIVNsI0wHJc0MqrAL9dqtbwos4qclYic
+        LYpQqSgPE8zZEIssCxPOFKhM5GBedbXk8RI58ULI8XgNOW5EriJQOi2KKNcCUwe/WzEXlkup+WqH
+        clFmHTkDrIgthJn2ORfnGr94+KSjDOI0Uhpk/qqRS5bIpS+FXLKGHNYpSEwcF4nPJGshytGPnGnJ
+        8lQXq9+5izLrvaXgBTPKhhkWR6yWKgsLbEVDFdvEQBynULzq3pJnS+Syl0IuW0Muxg4xT4TOIYmY
+        zU2U5EwKw7LEaCGKdA25izLryOnCCs6zkMe5CX1bExaYeTjPoRaWxswa+5qRS6IlcvkLIZdEa8hB
+        kvhWMVXSSq54UmhpU8HxQ4YSJs3WkLsos4pcAZqLWBdhZhEv7FBsWGA3GmpcRIYpKKOL1bLp7qt2
+        531tq1bW/w/8+BK/4qXw42v4GZPmuJ/FIi2woGlQESZSlKYZdg+ZKdbwuyjz+AtK9TB0Y69h6ypX
+        +4u1Y12f0k1XHam7vhv326c98hiBp8fBdQ3iBbWZf6NB7zSyNdJ1/al3iOUIEcxeBecQcy/66epe
+        1hXKITrTe1O12xranSvx1fchjfxwJDARPXqvg5Vj7bYoPJLq5N2Pm3/DALLX5a100sfrE6b/8kEw
+        lNBT2PyWyDMvYvpu7/H97DLd/nCRn68kFS1Jh8qBLi4/+lXtaKUgVqRDEZMayLn0ldLT84NfDVEM
+        8ZtB+X9AeQLttIZynB92an4YSR46WqfnIZxswQc908Pmw/zQVvPDPR0DZC6QWkvHW2KwpMGSWTui
+        76iR3ZE9JcmWxFkSZzmZW5KiigQqEqi6KVlppcP+Q7t303pHa0MrXfKO+GvSVhN/fe/XhjgbOr4h
+        zoYObsjElvhbMqslnpZ4Ojp3T2ftp5LjpjWcoOjpuJ7MHuiIgdiGX2ntpzWspZtigGwZ3vvVkVZH
+        Z2LI+pXYHZ0wGrrUSDrHKSDJXx/LsJTtcHx0V7+QdVJD2dVYRnzg/aXsugGCygZt54K/tjsf13PZ
+        azAhqj2lNUXtaQa8le1ulDs4S4CvCHifuVjA5DdmbxxFlL6LW72rGgh0h0Xam3hq9/nONxj/vyk7
+        C7tvZRP88OuIjnkTfNcMDnojmzP7/wZd3Wk65tVZn2zygn/J2uBt1+4qN5rX53XBNjz7DcPx37fa
+        /fWhzp8Z6t93fSPdmfEz6Xea69uOpaWLM99i2xK4LsCL9TJAfTJwpXSBghpB9juuxCwb+x5aF1QO
+        mmdUFP/FDLzmP9DwW+irezDB9333LJMW7H+QVT/gccF3wzMMOuF8uUhkn0WiWI3EW6itC35sK+qN
+        3UPQ2eAd6LLFVNo9nEXoP/udbKuP84nnt/EfKal1N7Zu6hBZynie+3yQoyu7/tAgUr/NkziOfDdt
+        scXcHvT/vSvb4LaDQ/+uHRp14hYE5Yl3S9/vXlfm0JCSCYcWe9mG+2jfJG7ctPW17F2lffPtiejQ
+        6+01i9OIJVE6NViD7itq4LyGfzwEDgYXnJLJ8NYgEMcueSbgcIA9Hl7VW3McN/xoeJx1TC/t2Vzh
+        tzVC7Dt5Mw87DIfeMI5Dxt7F0Y3Av/gnamk6U9nqy4zxTZT+NLtwGntOx51hq7vWVgZTvJL1+U4D
+        TnqfYK+vu96cbJ7K4K4cJt+QOUehUzIeC+0AhzgdT6aMGcL5bQLKvzxS10SxTd7DQg67rq/gidKD
+        BSxO+kgp5TSOoTv8QHVqcuXkAUOMqTcBRdefvLP+fBMgqlZWfT2BuwmWQ8AmuJ2CYxP8jhBCX0Kj
+        ZL/r4NSLM+0A3OyAA3VO9yV1ntDIqQfiuasP1JOhw7tmysLZKu/ag6bzu1PI07hHyrDjNMcDF1kk
+        99X5EHvPruekP7rk1BH7eeIyizu7cmzU4RAc4qoWnuodX5CeUn72Nc0ZNJJON8xFns7FYY+FH8/Z
+        op3fZDbpmn4xeI6qL6qYzSldc+bGMwXPNWSp5CvC0WH3jElCyfj4+F+JBfqyVCEAAA==
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:08 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/articles/21602406
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWyk0tLk5MT1WyUlByzSvJLKlUyMsvUUjLL81LsVJwLCrJTM5JDUstKs7Mz1PS
+        UVBKzk9BUuuXX+IGUqlUCwCxKsiFSQAAAA==
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:08 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/articles/21602406
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:08 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/licenses
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA52UXWvbMBSG/4rwdS35a6PLXeuEUsjKWJKLMYZRpePEIEtGlhu2sf8+KaOdP+Sx
+        +M4Cned9z3t0/PVn8EJFB8EKJTcokLR2n0GeR4E9dlq408mYpl0RwjRQU70AU3WtZIuVPpKmexYV
+        46qmlSQ/QCsS44gEv27QX3I8IKP7LyjD/8u3cJAttOT5O8km5NsxOdzdLYOHLfXwP0z4T+uFfMk9
+        /DiaCuRLBZhH4P0keyvgQkoXaric0mkfczJLW/GPI058MstHwmamkvXn/hlaoyvmQGjrqhl4tDg1
+        FGemw1KQSpaKlJUAymu7FV0LuugaoSgna8W6GqQBSbL9AVs2UM1Oa1tdvAoBLy7nJEoS3PByaC7t
+        Wfv4uPdYUY3tUHWawbBjd3vUZ39/7nfrMA1zQa3fK6iDshH+XQ9/11B2gjDxTup8PmN6uTCEbx/z
+        zdNu46rwydRitJ39MW0On7ZhjJMrrL+VDP8p/VAe7I15y0fZDYlK8PDtcGzEnPFsJOHfRq+Eo6Ze
+        6m0/ju08di4O8Q/0YJJXOqavXJC+LPpx251ADyBBU4H2oOsWqRIdvO+Rq+oiE0c4i5OYaPjT08q4
+        ukKVxeVBfvsNru2T2OIGAAA=
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:08 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.figshare.com/v2/account/categories
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 22 Nov 2022 10:51:08 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://ndownloader.figshare.com/files/38288616
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA0vLzEmNNwAAn2hb3wYAAAA=
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - max-age=0
+      Connection:
+      - keep-alive
+      Content-Disposition:
+      - attachment;filename=file_0.txt
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/plain
+      Date:
+      - Tue, 22 Nov 2022 10:51:08 GMT
+      Expires:
+      - Tue, 22 Nov 2022 10:51:08 GMT
+      Last-Modified:
+      - Tue, 22 Nov 2022 10:50:54 GMT
+      Server:
+      - nginx
+      Set-Cookie:
+      - fig_tracker_client=65d7374e-2cbd-4bf5-adbf-d2c3a229cfc7; Max-Age=31536000;
+        Path=/; expires=Wed, 22-Nov-2023 10:51:08 GMT; secure; HttpOnly
+      Transfer-Encoding:
+      - chunked
+      x-ntap-sg-trace-id:
+      - 502233165fe00dc0
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - fig_tracker_client=65d7374e-2cbd-4bf5-adbf-d2c3a229cfc7
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://ndownloader.figshare.com/files/38288619
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA0vLzEmNNwQACVhcqAYAAAA=
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - max-age=0
+      Connection:
+      - keep-alive
+      Content-Disposition:
+      - attachment;filename=file_1.txt
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/plain
+      Date:
+      - Tue, 22 Nov 2022 10:51:09 GMT
+      Expires:
+      - Tue, 22 Nov 2022 10:51:09 GMT
+      Last-Modified:
+      - Tue, 22 Nov 2022 10:50:55 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      x-ntap-sg-trace-id:
+      - 254299d50782dc1a
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - fig_tracker_client=65d7374e-2cbd-4bf5-adbf-d2c3a229cfc7
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://ndownloader.figshare.com/files/38288622
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA0vLzEmNNwIAswlVMQYAAAA=
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - max-age=0
+      Connection:
+      - keep-alive
+      Content-Disposition:
+      - attachment;filename=file_2.txt
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/plain
+      Date:
+      - Tue, 22 Nov 2022 10:51:09 GMT
+      Expires:
+      - Tue, 22 Nov 2022 10:51:09 GMT
+      Last-Modified:
+      - Tue, 22 Nov 2022 10:50:57 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      x-ntap-sg-trace-id:
+      - fd6019405041163c
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - fig_tracker_client=65d7374e-2cbd-4bf5-adbf-d2c3a229cfc7
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://ndownloader.figshare.com/files/38288625
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA0vLzEmNNwYAJTlSRgYAAAA=
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - max-age=0
+      Connection:
+      - keep-alive
+      Content-Disposition:
+      - attachment;filename=file_3.txt
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/plain
+      Date:
+      - Tue, 22 Nov 2022 10:51:09 GMT
+      Expires:
+      - Tue, 22 Nov 2022 10:51:09 GMT
+      Last-Modified:
+      - Tue, 22 Nov 2022 10:50:58 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      x-ntap-sg-trace-id:
+      - 9221eeee5567c0b9
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - fig_tracker_client=65d7374e-2cbd-4bf5-adbf-d2c3a229cfc7
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://ndownloader.figshare.com/files/38288628
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA0vLzEmNNwEAhqw22AYAAAA=
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - max-age=0
+      Connection:
+      - keep-alive
+      Content-Disposition:
+      - attachment;filename=file_4.txt
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/plain
+      Date:
+      - Tue, 22 Nov 2022 10:51:09 GMT
+      Expires:
+      - Tue, 22 Nov 2022 10:51:09 GMT
+      Last-Modified:
+      - Tue, 22 Nov 2022 10:51:01 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      x-ntap-sg-trace-id:
+      - 2b30671da20c7e12
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - fig_tracker_client=65d7374e-2cbd-4bf5-adbf-d2c3a229cfc7
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://ndownloader.figshare.com/files/38288631
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA0vLzEmNNwUAEJwxrwYAAAA=
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - max-age=0
+      Connection:
+      - keep-alive
+      Content-Disposition:
+      - attachment;filename=file_5.txt
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/plain
+      Date:
+      - Tue, 22 Nov 2022 10:51:09 GMT
+      Expires:
+      - Tue, 22 Nov 2022 10:51:09 GMT
+      Last-Modified:
+      - Tue, 22 Nov 2022 10:51:02 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      x-ntap-sg-trace-id:
+      - f5061b943bbb4edf
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - fig_tracker_client=65d7374e-2cbd-4bf5-adbf-d2c3a229cfc7
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://ndownloader.figshare.com/files/38288634
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA0vLzEmNNwMAqs04NgYAAAA=
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - max-age=0
+      Connection:
+      - keep-alive
+      Content-Disposition:
+      - attachment;filename=file_6.txt
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/plain
+      Date:
+      - Tue, 22 Nov 2022 10:51:10 GMT
+      Expires:
+      - Tue, 22 Nov 2022 10:51:10 GMT
+      Last-Modified:
+      - Tue, 22 Nov 2022 10:51:03 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      x-ntap-sg-trace-id:
+      - cf17fbccde96339f
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - fig_tracker_client=65d7374e-2cbd-4bf5-adbf-d2c3a229cfc7
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://ndownloader.figshare.com/files/38288637
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA0vLzEmNNwcAPP0/QQYAAAA=
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - max-age=0
+      Connection:
+      - keep-alive
+      Content-Disposition:
+      - attachment;filename=file_7.txt
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/plain
+      Date:
+      - Tue, 22 Nov 2022 10:51:10 GMT
+      Expires:
+      - Tue, 22 Nov 2022 10:51:10 GMT
+      Last-Modified:
+      - Tue, 22 Nov 2022 10:51:04 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      x-ntap-sg-trace-id:
+      - 6d18b4f436e85c31
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - fig_tracker_client=65d7374e-2cbd-4bf5-adbf-d2c3a229cfc7
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://ndownloader.figshare.com/files/38288640
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA0vLzEmNtwAAreCA0QYAAAA=
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - max-age=0
+      Connection:
+      - keep-alive
+      Content-Disposition:
+      - attachment;filename=file_8.txt
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/plain
+      Date:
+      - Tue, 22 Nov 2022 10:51:10 GMT
+      Expires:
+      - Tue, 22 Nov 2022 10:51:10 GMT
+      Last-Modified:
+      - Tue, 22 Nov 2022 10:51:06 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      x-ntap-sg-trace-id:
+      - 1a96644a689ee483
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Cookie:
+      - fig_tracker_client=65d7374e-2cbd-4bf5-adbf-d2c3a229cfc7
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://ndownloader.figshare.com/files/38288643
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA0vLzEmNtwQAO9CHpgYAAAA=
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - max-age=0
+      Connection:
+      - keep-alive
+      Content-Disposition:
+      - attachment;filename=file_9.txt
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/plain
+      Date:
+      - Tue, 22 Nov 2022 10:51:10 GMT
+      Expires:
+      - Tue, 22 Nov 2022 10:51:10 GMT
+      Last-Modified:
+      - Tue, 22 Nov 2022 10:51:07 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      x-ntap-sg-trace-id:
+      - a88a9d5f82cde637
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.28.1
+    method: DELETE
+    uri: https://api.figshare.com/v2/account/articles/21602406
+  response:
+    body:
+      string: ''
+    headers:
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - https://api.figshare.com
+      Access-Control-Max-Age:
+      - '3600'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 22 Nov 2022 10:51:10 GMT
+      Server:
+      - nginx
+    status:
+      code: 204
+      message: No Content
+version: 1
